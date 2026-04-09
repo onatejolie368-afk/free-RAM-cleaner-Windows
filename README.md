@@ -24,6 +24,8 @@ The description is good but quickly becomes long.
 
 Suggested rewrite
 
+```
+
 # WinMemoryCleaner
 
 WinMemoryCleaner is a lightweight Windows utility that frees and optimizes system memory using documented Windows API functions.
@@ -36,6 +38,8 @@ Key characteristics:
 • Uses documented Windows APIs
 • Open-source (GPL-3.0)
 • Works on Windows XP and later
+
+```
 
 This helps developers understand the project instantly.
 
