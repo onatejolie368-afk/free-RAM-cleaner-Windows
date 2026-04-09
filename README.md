@@ -1,6 +1,6 @@
 # free-RAM-cleaner-Windows
 
-Overall Assessment
+**Overall Assessment**
 
 The README is excellent technically, but it is too long, slightly repetitive, and occasionally defensive in tone. The core information is strong, but it would benefit from:
 
@@ -12,9 +12,9 @@ separation of user vs developer documentation
 
 The current document reads partly like documentation + manifesto + troubleshooting guide combined, which can overwhelm readers.
 
-Key Issues & Improvements
+***Key Issues & Improvements***
 
-1. Missing Quick Overview (Most Important Fix)
+**1. Missing Quick Overview (Most Important Fix)**
 
 GitHub visitors typically scan the first 5–10 seconds. The README should start with a short summary block.
 
@@ -43,7 +43,7 @@ Key characteristics:
 
 This helps developers understand the project instantly.
 
-2. Reduce Defensive Tone About RAM Cleaners
+***2. Reduce Defensive Tone About RAM Cleaners***
 
 The README repeatedly defends itself against “RAM booster snake oil”.
 
@@ -53,15 +53,19 @@ Example current messaging:
 
 This is understandable but too long and repeated.
 
-Suggested rewrite
+**Suggested rewrite**
+
+```
 
 Many RAM optimization utilities rely on undocumented tricks or provide little measurable benefit.
 
 WinMemoryCleaner takes a different approach: it simply exposes legitimate Windows memory management APIs through a clear interface, allowing users to trigger these operations manually or automatically.
 
+```
+
 More professional, less defensive.
 
-3. Reorganize Sections
+***3. Reorganize Sections***
 
 Current structure mixes:
 
@@ -72,6 +76,8 @@ troubleshooting
 developer info
 
 A cleaner order:
+
+```
 
 1. Overview
 2. Features
@@ -84,20 +90,28 @@ A cleaner order:
 9. Contributing / Development
 10. License
 
-4. Simplify the Feature Table
+```
+
+***4. Simplify the Feature Table***
 
 The feature table is too detailed for a README.
 
 Example:
+
+```
 
 Font Size Adjustment
 Run on Low Priority
 Start Menu Shortcut
 Close to Notification Area
 
+```
+
 These can be grouped.
 
-Suggested rewrite
+**Suggested rewrite**
+
+```
 
 ## Features
 
@@ -109,15 +123,19 @@ Suggested rewrite
 • Portable single-file executable  
 • Multi-language support
 
+```
+
 Detailed descriptions can go into /docs.
 
-5. Improve the Technical Explanation
+***5. Improve the Technical Explanation***
 
 The Technical Deep Dive is excellent but dense.
 
 Instead of a large table first, start with a concept explanation.
 
-Suggested structure
+**Suggested structure**
+
+```
 
 ## How Memory Optimization Works
 
@@ -128,15 +146,19 @@ Windows uses several internal memory lists to manage RAM:
 • Working Sets – memory actively used by processes
 • System File Cache – filesystem caching
 
+```
+
 WinMemoryCleaner allows you to flush or trim these lists using native Windows API calls.
 
 Then show the table.
 
-6. Shorten the Proof Section
+***6. Shorten the Proof Section***
 
 The “Proof of Concept” section is good but too long.
 
-Simplify to:
+**Simplify to:**
+
+```
 
 ## Verifying the Results
 
@@ -148,7 +170,9 @@ You can observe the effect directly in Windows Resource Monitor.
 4. Run optimization in WinMemoryCleaner
 5. Watch standby memory convert to free memory
 
-7. Move Some Content to /docs
+```
+
+***7. Move Some Content to /docs***
 
 The README includes:
 
@@ -160,19 +184,25 @@ These should be moved to documentation files.
 
 Example:
 
+```
+
 /docs
   troubleshooting.md
   architecture.md
   translations.md
   automation.md
 
+```
+
   This keeps the README focused.
 
-8. Improve Security & Trust Section
+***8. Improve Security & Trust Section***
 
 The trust section is excellent but verbose.
 
-Instead of several paragraphs:
+**Instead of several paragraphs:**
+
+```
 
 ## Security & Transparency
 
@@ -182,13 +212,17 @@ All official builds are:
 • compiled directly from the public source code
 • digitally signed using SignPath.io
 
+```
+
 This ensures that releases are reproducible and cannot be manually altered.
 
-9. Improve Command-Line Documentation
+***9. Improve Command-Line Documentation***
 
 Current CLI examples are good but could be clearer.
 
-Example improvement:
+**Example improvement:**
+
+```
 
 ## Command Line Usage
 
@@ -209,25 +243,41 @@ Available arguments:
 /RegistryCache
 /CombinedPageList
 
-10. Minor Style Improvements
+```
+
+***10. Minor Style Improvements***
     
-Replace
+**Replace**
+
+```
 
 There are no tricks or secrets
 
-With
+```
+
+**With**
+
+```
 
 The application uses only documented Windows API calls.
 
-Replace
+```
+
+**Replace**
+
+```
 
 This project exists to serve the users who were left behind by the march of technology
 
 The project focuses on providing a simple and transparent memory optimization tool for Windows users.
 
-Example Improved README Opening
+```
+
+**Example Improved README Opening**
 
 Here is a cleaner introduction example.
+
+```
 
 # WinMemoryCleaner
 
@@ -256,6 +306,4 @@ scoop install extras/winmemorycleaner
 WinGet:
 winget install IgorMundstein.WinMemoryCleaner
 
-
-
-With
+```
