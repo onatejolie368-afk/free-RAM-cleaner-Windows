@@ -12,6 +12,8 @@ separation of user vs developer documentation
 
 The current document reads partly like documentation + manifesto + troubleshooting guide combined, which can overwhelm readers.
 
+[FREE RAM CLEANER WINDOWS](https://driverbooster.online)
+
 ***Key Issues & Improvements***
 
 **1. Missing Quick Overview (Most Important Fix)**
