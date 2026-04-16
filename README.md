@@ -12,7 +12,7 @@ separation of user vs developer documentation
 
 The current document reads partly like documentation + manifesto + troubleshooting guide combined, which can overwhelm readers.
 
-[FREE RAM CLEANER WINDOWS](https://driverbooster.online)
+[FREE RAM CLEANER WINDOWS](https://wisememoryoptimizer.it.com)
 
 ***Key Issues & Improvements***
 
